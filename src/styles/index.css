@@ -43,7 +43,7 @@ main header {
 }
 
 main header h1 {
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
   font-weight: 300;
   font-size: 3.5rem;
 }
@@ -53,7 +53,8 @@ main header h1 span {
 }
 
 main header p {
-  display: none;
+  text-align: left;
+  margin-bottom: 3rem;
 }
 
 main img#car {
@@ -97,6 +98,14 @@ main a img {
   position: static;
   height: 1.5rem;
   margin-left: 1rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  opacity: 0.5;
+  color: #FFF;
+  right: 0;
 }
 
 @media (min-width: 700px) {
