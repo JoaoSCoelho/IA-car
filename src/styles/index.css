@@ -4,7 +4,34 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
+
+
+#background .linha {
+  height: 0.5rem;
+  width: 150vmax;
+  position: fixed;
+  background: #e1e8f5;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+#background #linha1 {
+  transform: rotate(40deg);
+  top: 55vmax;
+  left: -20vmax;
+}
+
+#background #linha2 {
+  transform: rotate(-70deg);
+}
+
+#background #linha3 {
+  transform: rotate(120deg);
+  left: -35vmax;
+}
+
 
 main {
   width: 90%;
