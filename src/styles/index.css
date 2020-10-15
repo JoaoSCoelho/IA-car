@@ -1,0 +1,116 @@
+body {
+  background: #131416;
+  color: #e1e8f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 90%;
+  max-width: 1000px;
+}
+
+main header {
+  text-align: center;
+}
+
+main header h1 {
+  margin-bottom: 5rem;
+  font-weight: 300;
+  font-size: 3.5rem;
+}
+
+main header h1 span {
+  font-weight: 700;
+}
+
+main header p {
+  display: none;
+}
+
+main img#car {
+  width: 100%;
+  max-width: 600px;
+}
+
+main a {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0e51d6;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: #e1e8f5;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 5rem;
+}
+
+main a:hover {
+  background: #0e51d6cc;
+}
+
+main a:hover p {
+  transition: 0.2s;
+  margin-right: 1.5rem;
+}
+
+main a:hover img {
+  transition: 0.2s;
+  margin-right: -1.5rem;
+}
+
+main a p {
+  margin-left: 1.5rem;
+}
+
+main a img {
+  position: static;
+  height: 1.5rem;
+  margin-left: 1rem;
+}
+
+@media (min-width: 700px) {
+
+  main {
+    max-height: 80vh;
+  }
+
+  main header {
+    width: 40%;
+    min-width: 200px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  main header h1 {
+    font-size: 4rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+
+  main header p {
+    display: block;
+    text-align: left;
+  }
+
+  main img#car {
+    width: 60%;
+    vertical-align: middle;
+    float: right;
+  }
+}
+
+@media (min-width: 1000px) {
+  main header h1 {
+    font-size: 5rem;
+  }
+
+  main header p {
+    width: 85%;
+    font-size: 1.2rem;
+  }
+}
