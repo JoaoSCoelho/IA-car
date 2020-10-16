@@ -9,12 +9,12 @@ body {
 
 
 #background .linha {
-  height: 0.5rem;
+  height: 0.3rem;
   width: 150vmax;
   position: fixed;
   background: #e1e8f5;
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 #background #linha1 {
@@ -44,7 +44,7 @@ main header {
 
 main header h1 {
   margin-bottom: 1rem;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 3.5rem;
 }
 
@@ -59,7 +59,9 @@ main header p {
 
 main img#car {
   width: 100%;
-  max-width: 600px;
+  max-width: 400px;
+  display: block;
+  margin: auto;
 }
 
 main a {
@@ -135,6 +137,7 @@ footer {
 
   main img#car {
     width: 60%;
+    max-width: initial;
     vertical-align: middle;
     float: right;
   }

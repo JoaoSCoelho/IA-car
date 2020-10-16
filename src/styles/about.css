@@ -1,0 +1,50 @@
+body {
+  background: #ecedf2;
+}
+
+#header {
+  width: 100%;
+  background: #0e51d6;
+  padding: 0 1rem;
+  height: 3rem;
+  display: flex;
+  align-items: baseline;
+}
+
+#header #name-car-header {
+  font-style: italic;
+  color: #e1e8f5;
+  line-height: 3rem;
+  font-size: 1.3rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+#header #name-car-header span {
+  font-weight: 700;
+}
+
+#header #header-copy {
+  display: inline-block;
+  font-size: 0.7rem;
+  color: #e1e8f5c4;
+}
+
+#body {
+  padding: 1rem;
+  text-align: center;
+}
+
+#body #paragrafo-construcao img {
+  width: 80%;
+  transform: rotate(-10deg);
+}
+
+#body #paragrafo-construcao p {
+  text-align: left;
+  background: linear-gradient(to top left, #0099ff, #63c0ff);
+  padding: 3rem 1rem 1rem;
+  margin-top: -2rem;
+  border-radius: 0.5rem;
+  box-decoration-break: slice;
+}
