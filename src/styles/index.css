@@ -40,16 +40,31 @@ main {
 
 main header {
   text-align: center;
+  user-select: none;
 }
 
 main header h1 {
   margin-bottom: 1rem;
   font-weight: 200;
   font-size: 3.5rem;
+  
+}
+
+main header h1 p {
+  display: inline;
+  margin: 0 -1rem;
+}
+
+main header h1:hover p {
+  
+  color: #00000000;
+  position: absolute;
 }
 
 main header h1 span {
   font-weight: 700;
+  color: #e1e8f5;
+  transition: 0.2s;
 }
 
 main header p {
@@ -130,7 +145,7 @@ footer {
     text-align: left;
   }
 
-  main header p {
+  main header p.description {
     display: block;
     text-align: left;
   }
@@ -148,7 +163,7 @@ footer {
     font-size: 5rem;
   }
 
-  main header p {
+  main header p.description {
     width: 85%;
     font-size: 1.2rem;
   }
