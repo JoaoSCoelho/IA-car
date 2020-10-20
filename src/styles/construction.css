@@ -50,25 +50,23 @@ body {
 
 #body .paragraph {
   border-bottom: 0.5rem solid #00ff00;
-  height: 1rem;
-  width: 0%;
   color: #00000000;
+  max-width: 0%;
 }
 
 #body .paragraph-start {
-  width: 100%;
+  max-width: 100%;
   height: 1rem;
   color: #00000000;
-  transition: width 1s ease-in;
+  transition: max-width 1s ease-in;
   border-bottom: 0.5rem solid #00ff00;
 }
 
-#body #paragraph-show {
+#body .paragraph-show {
   padding: 2rem 1rem;
   color: inherit;
   border-bottom: 0.5rem solid #00ff00;
-  height: 5rem;
-  transition: height 10s ease-out;
+  transition: height 3s ease-out;
 }
 
 @media (min-width: 800px) {
