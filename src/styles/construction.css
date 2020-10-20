@@ -9,6 +9,12 @@ body {
   padding: 0 1rem;
   height: 3rem;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .container {
+  display: flex;
   align-items: baseline;
 }
 
@@ -31,6 +37,22 @@ body {
   color: #e1e8f5c4;
 }
 
+#header .themer-bar {
+  border-radius: 50rem;
+  background: #303744;
+  width: 40px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+}
+
+#header .themer-circle {
+  width: 20px;
+  height: 20px;
+  background: #FFF;
+  border-radius: 100%;
+}
+
 #body {
   min-height: calc(100vh - 8rem);
   padding: 1rem;
@@ -46,6 +68,7 @@ body {
   font-weight: 700;
   overflow: hidden;
   max-width: 700px;
+  box-shadow: 0px 0px 10px #00000080;
 }
 
 #body .paragraph {

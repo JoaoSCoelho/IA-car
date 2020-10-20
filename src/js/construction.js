@@ -62,7 +62,7 @@ function previousPage() {
   paragraph.innerHTML = `<h1>${texts[page - 1].title}</h1> ${texts[page - 1].paragraph}`;
   paragraph.setAttribute('class', 'paragraph');
   page--;
-  if (page - 1 <= 0) previousBt.style.display = 'none';
+  if (page <= 0) previousBt.style.display = 'none';
   startAnimation();
 }
 
