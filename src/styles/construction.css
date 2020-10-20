@@ -1,5 +1,6 @@
 body {
   background: url('../images/pattern.svg');
+  overflow-x: hidden;
 }
 
 #header {
@@ -31,27 +32,26 @@ body {
 }
 
 #body {
-  max-width: 900px;
-  margin: auto;
-  background: #ffffff80;
-  min-height: calc(100vh - 3rem);
+  min-height: calc(100vh - 8rem);
   padding: 1rem;
 }
 
 #body .container-paragraph {
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   text-align: justify;
+  margin: auto;
   margin-top: 1rem;
   background: #e1e8f5;
   color: #0e51d6;
-  font-weight: 800;
+  font-weight: 700;
   overflow: hidden;
+  max-width: 700px;
 }
 
 #body .paragraph {
   border-bottom: 0.5rem solid #00ff00;
   color: #00000000;
-  max-width: 0%;
+  overflow: hidden;
 }
 
 #body .paragraph-start {
@@ -60,26 +60,58 @@ body {
   color: #00000000;
   transition: max-width 1s ease-in;
   border-bottom: 0.5rem solid #00ff00;
+  overflow: hidden;
 }
 
 #body .paragraph-show {
-  padding: 2rem 1rem;
+  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   color: inherit;
   border-bottom: 0.5rem solid #00ff00;
-  transition: height 3s ease-out;
+  transition: height 2s ease-out;
+  overflow: hidden;
+}
+
+#body .paragraph-show h1 {
+  border-bottom: 1px solid #181f2c70;
+  padding-bottom: 0.5rem;
+  width: 100%;
+}
+
+.container-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.previous, .next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  width: 5rem;
+  background: #0e51d6;
+  border-radius: 0.5rem;
+}
+
+.previous:hover, .next:hover {
+  border: none;
+}
+
+.previous:active, .next:active {
+  background: #181f2c;
+}
+
+.previous img {
+  transform: rotate(180deg);
 }
 
 @media (min-width: 800px) {
-  #body .paragrafo p {
-    font-size: 1.2rem;
-    width: 40%;
-  }
-
-  #body .paragrafo figure {
-    width: calc(60% - 5px);
-  }
-
-  #body .paragrafo figure img {
-    max-width: 350px;
+  #body {
+    font-size: 1.3rem
   }
 }
