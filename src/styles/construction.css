@@ -65,7 +65,7 @@ body {
 }
 
 #body {
-  min-height: calc(100vh - 8rem);
+  min-height: calc(100vh - 9rem);
   padding: 1rem;
 }
 
@@ -150,10 +150,11 @@ body {
   background: #0e51d6;
   border-radius: 0.5rem;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 .previous:hover, .next:hover {
-  border: none;
+  border-style: inset;
 }
 
 #prev-white:active, #next-white:active {

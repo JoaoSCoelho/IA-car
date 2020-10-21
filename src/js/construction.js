@@ -42,12 +42,12 @@ function nextPage() {
 
   previousBt.style.display = 'flex';
   title.innerText = texts[page + 1].title;
-  paragraph.style.maxWidth = '0%';
-  paragraph.innerHTML = `<h1>${texts[page + 1].title}</h1> ${texts[page + 1].paragraph}`;
-  paragraph.setAttribute('class', 'paragraph');
+  initialEl.style.maxWidth = '0%';
+  initialEl.innerHTML = `<h1>${texts[page + 1].title}</h1> ${texts[page + 1].paragraph}`;
+  initialEl.setAttribute('class', 'paragraph');
   page++;
   if (page + 1 >= texts.length) nextBt.style.display = 'none';
-  startAnimation();
+  setTimeout(() => startAnimation(), 100);
 }
 
 function previousPage() {
@@ -56,12 +56,12 @@ function previousPage() {
 
   nextBt.style.display = 'flex';
   title.innerText = texts[page - 1].title;
-  paragraph.style.maxWidth = '0%';
-  paragraph.innerHTML = `<h1>${texts[page - 1].title}</h1> ${texts[page - 1].paragraph}`;
-  paragraph.setAttribute('class', 'paragraph');
+  initialEl.style.maxWidth = '0%';
+  initialEl.innerHTML = `<h1>${texts[page - 1].title}</h1> ${texts[page - 1].paragraph}`;
+  initialEl.setAttribute('class', 'paragraph');
   page--;
   if (page <= 0) previousBt.style.display = 'none';
-  startAnimation();
+  setTimeout(() => startAnimation(), 100);
 }
 
 previousBt.style.display = 'none';
