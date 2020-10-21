@@ -22,12 +22,12 @@
       <p id="header-copy">Construção</p>
     </div>
     <div class="themer-bar">
-      <div class="themer-circle" id="white"></div>
+      <div class="themer-circle" id="white" onclick="changeTheme()"></div>
     </div>
   </header>
 
   <section id="body">
-    <div class="container-paragraph">
+    <div class="container-paragraph-white">
       <div class="paragraph">
         <h1>Construção</h1>
         Esse carro foi construído a mão por Jhone Dourado, que ficou responsável por construir a parte física. Suas rodas são reutilizações de brinquedos, elas tem a parte do pneu em borracha, o que auxilia no grip que o IntellCar possui em contato com o chão, seja ele piso, asfalto, concreto etc. A carcaça é de MDF, um tipo de madeira bem barato e muito conhecido. Para esse protótipo não foi necessário um material mais resistente, já que as peças mais pesadas dele são os dois motores, e isso o MDF aguenta tranquilamente.<br>Falando em motores, esse carrinho tem dois motores elétricos com caixa de redução, o que já é mais do que suficiente para fazê-lo mover-se. Na verdade, apenas um desses motores já seria o suficiente, mas a real utilização de dois desses é que usando um em cada roda traseira conseguimos fazer com que o carrinho faça curvas sem necessariamente virar a roda dianteira (explicaremos isso mais a frente).<br>O cérebro do IntellCar é um Arduíno UNO, que para quem não conheçe é uma plaquinha com um chip programável e algumas conexões para entrada e saída de dados e energia, mas essa placa foi um item comprado, já que é um pouco mais complexo e exige a utilização de alguns equipamentos e ferramentas que não temos disponíveis.
@@ -39,16 +39,17 @@
   </section>
 
   <div class="container-buttons">
-    <button class="previous" onclick="previousPage()">
+    <button class="previous" id="prev-white" onclick="previousPage()">
       <img src="../src/images/iconfinder_Arrow_Forward_1063879.svg" alt="Seta esquerda">
     </button>
 
-    <button class="next" onclick="nextPage()">
+    <button class="next" id="next-white" onclick="nextPage()">
       <img src="../src/images/iconfinder_Arrow_Forward_1063879.svg" alt="Seta direita">
     </button>
   </div>
 
   <script src="../src/js/construction.js"></script>
+  <script src="../src/js/theme.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 body {
-  background: url('../images/pattern.svg');
+  background: url('../images/pattern-white.svg');
   overflow-x: hidden;
 }
 
@@ -51,6 +51,17 @@ body {
   height: 20px;
   background: #FFF;
   border-radius: 100%;
+  cursor: pointer;
+}
+
+#header #white {
+  margin-left: 0;
+  transition: margin-left 0.5s;
+}
+
+#header #dark {
+  margin-left: 20px;
+  transition: margin-left 0.5s;
 }
 
 #body {
@@ -58,7 +69,7 @@ body {
   padding: 1rem;
 }
 
-#body .container-paragraph {
+#body .container-paragraph-white {
   border-radius: 0.5rem;
   text-align: justify;
   margin: auto;
@@ -71,6 +82,31 @@ body {
   box-shadow: 0px 0px 10px #00000080;
 }
 
+#body .container-paragraph-dark {
+  border-radius: 0.5rem;
+  text-align: justify;
+  margin: auto;
+  margin-top: 1rem;
+  background: #303744;
+  color: #fff;
+  font-weight: 700;
+  overflow: hidden;
+  max-width: 700px;
+  box-shadow: 0px 0px 10px #00000080;
+}
+
+#body .container-paragraph-white h1 {
+  border-bottom: 1px solid #181f2c70;
+  padding-bottom: 0.5rem;
+  width: 100%;
+}
+
+#body .container-paragraph-dark h1 {
+  border-bottom: 1px solid #acb0b8;
+  padding-bottom: 0.5rem;
+  width: 100%;
+}
+ 
 #body .paragraph {
   border-bottom: 0.5rem solid #00ff00;
   color: #00000000;
@@ -97,12 +133,6 @@ body {
   overflow: hidden;
 }
 
-#body .paragraph-show h1 {
-  border-bottom: 1px solid #181f2c70;
-  padding-bottom: 0.5rem;
-  width: 100%;
-}
-
 .container-buttons {
   display: flex;
   justify-content: space-around;
@@ -125,8 +155,12 @@ body {
   border: none;
 }
 
-.previous:active, .next:active {
+#prev-white:active, #next-white:active {
   background: #181f2c;
+}
+
+#prev-dark:active, #next-dark:active {
+  background: #acb0b8;
 }
 
 .previous img {

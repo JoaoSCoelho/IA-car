@@ -18,13 +18,11 @@ const previousBt = document.querySelector('.previous');
 const nextBt = document.querySelector('.next');
 let page = 0
 
-console.log(texts[0].paragraph.length);
-
 function startAnimation() {
   const el = document.getElementsByClassName('paragraph')[0];
   
   const formHeight = Number(height.split('px')[0]) * (texts[page].paragraph.length / 1000 + 0.1);
-  console.log(height, formHeight)
+
   el.style.maxWidth = '0%';
   el.style.height = '1rem';
   el.setAttribute('class', 'paragraph-start');
