@@ -13,25 +13,29 @@ const texts = [
   }
 ];
 const initialEl = document.getElementsByClassName('paragraph')[0];
-const height = getComputedStyle(initialEl).height;
+/* const height = getComputedStyle(initialEl).height; */
 const previousBt = document.querySelector('.previous');
 const nextBt = document.querySelector('.next');
 let page = 0
 
 function startAnimation() {
   const el = document.getElementsByClassName('paragraph')[0];
-  
-  const formHeight = Number(height.split('px')[0]) * (texts[page].paragraph.length / 1000 + 0.1);
-
+  const widhtDoBagui = innerWidth <= 680 ? innerWidth : 680;
+  const fontSize = innerWidth <= 800 ? 16 : 20
+  const heightDoBagui = ((texts[page].paragraph.length / (widhtDoBagui / fontSize)) * fontSize) + 25;
+  console.log(heightDoBagui)
   el.style.maxWidth = '0%';
   el.style.height = '1rem';
   el.setAttribute('class', 'paragraph-start');
-  setTimeout(() => el.style.maxWidth = '100%', 200);
-
   setTimeout(() => {
-    el.setAttribute('class', 'paragraph-show');
-    el.style.height = `${formHeight}px`;
-  }, 1500);
+    el.style.maxWidth = '100%';
+    setTimeout(() => {
+      el.setAttribute('class', 'paragraph-show');
+      el.style.height = `${heightDoBagui}px`;
+    }, 1300);
+  }, 200);
+
+  
 };
 
 startAnimation();
