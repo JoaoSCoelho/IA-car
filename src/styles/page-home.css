@@ -39,10 +39,12 @@
 /*background*/
 #banner {
   width: 100%;
-  min-height: 100vh;
+  min-height: 280px;
+  height: 100vh;
 
   background-image: url(../images/banner.jpg);
   background-position: center;
+  background-size: cover;
 
   margin: 0;
   padding: 5%;
@@ -51,6 +53,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  vertical-align: bottom;
 } 
 
 #banner h1 {
@@ -75,8 +79,8 @@
   color: #ffffff;
   font-size: clamp(3rem, 3vw, 3.5rem);
 
+  top: calc(80vh + 60px);
   position: absolute;
-  bottom: 40px;
 }
 
 @keyframes opacity {
@@ -255,7 +259,7 @@
 }
 
 .txt {
-  width: 40%;
+  width: 45%;
 
   margin-left: 5%;
 }
