@@ -31,7 +31,7 @@ function startAnimation() {
     el.style.maxWidth = '100%';
     setTimeout(() => {
       el.setAttribute('class', 'paragraph-show');
-      el.style.height = `${heightDoBagui}px`;
+      el.style.height = `100%`;
     }, 1300);
   }, 200);
 

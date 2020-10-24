@@ -99,12 +99,14 @@ body {
   border-bottom: 1px solid #181f2c70;
   padding-bottom: 0.5rem;
   width: 100%;
+  margin-bottom: 2rem;
 }
 
 #body .container-paragraph-dark h1 {
   border-bottom: 1px solid #acb0b8;
   padding-bottom: 0.5rem;
   width: 100%;
+  margin-bottom: 2rem;
 }
  
 #body .paragraph {
@@ -123,7 +125,7 @@ body {
 }
 
 #body .paragraph-show {
-  padding: 0 1rem;
+  padding: 1rem 1rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
