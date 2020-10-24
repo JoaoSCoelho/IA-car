@@ -1,11 +1,11 @@
 const texts = [
   {
     title: "Construção",
-    paragraph: "Esse carro foi construído a mão por Jhone Dourado, que ficou responsável por construir a parte física. Suas rodas são reutilizações de brinquedos, elas tem a parte do pneu em borracha, o que auxilia no grip que o IntellCar possui em contato com o chão, seja ele piso, asfalto, concreto etc. A carcaça é de MDF, um tipo de madeira bem barato e muito conhecido. Para esse protótipo não foi necessário um material mais resistente, já que as peças mais pesadas dele são os dois motores, e isso o MDF aguenta tranquilamente.<br>Falando em motores, esse carrinho tem dois motores elétricos com caixa de redução, o que já é mais do que suficiente para fazê-lo mover-se. Na verdade, apenas um desses motores já seria o suficiente, mas a real utilização de dois desses é que usando um em cada roda traseira conseguimos fazer com que o carrinho faça curvas sem necessariamente virar a roda dianteira (explicaremos isso mais a frente).<br>O cérebro do IntellCar é um Arduíno UNO, que para quem não conheçe é uma plaquinha com um chip programável e algumas conexões para entrada e saída de dados e energia, mas essa placa foi um item comprado, já que é um pouco mais complexo e exige a utilização de alguns equipamentos e ferramentas que não temos disponíveis." 
+    paragraph: 'Esse carro foi construído a mão por Jhone Dourado, que ficou responsável por construir a parte física. Ele é composto por:<br>- Uma carcaça de mdf<br>- Uma protoboard (placa de testes para conectar jumpers(fios)<br>- Um arduíno uno <br>- Uma ponte H onde estão conectados os motores<br>- 2 motores com caixa de redução<br>- Um sensor de distância<br>- Uma bateria 9v<br>- 2 ldr<br>- 2 leds.<br>O cérebro do IntellCar é um Arduíno UNO, que para quem não conheçe é uma plaquinha com um chip programável e algumas conexões para entrada e saída de dados e energia, mas essa placa foi um item comprado, já que é um pouco mais complexo e exige a utilização de alguns equipamentos e ferramentas que não temos disponíveis.<br><br>Como dito anteriormente, o cérebro do IntellCar é um Arduíno, mas ele não vêm configurado para colocar na carcaça e sair andando, primeiramente devemos programá-lo e fizemos isso em linguagem C++. E se você está achando que foi difícil fazer isso, temos uma ótima notícia pra lhe dar, porque isso é muito simples e vamos lhe explicar passo a passo o que o código faz: Ele armazena na memória funções do tipo void que guardam os movimentos de cada etapa. Por exemplo: movimentos para virar a esquerda, direita, seguir reto e analisar distâncias ao se deparar com um obstáculo. Dentro do código elas são chamadas de "avance", "vireDireita", "vireEsquerda", "pare" e "observe". Na "observe" ele calcula as distâncias dos lados do obstáculos e faz o contorno pela direção que possui mais espaço, ele tem uma condição que se a distância da direita for maior que a da esquerda: vire para a direita, se não: vire para a esquerda, esse calculo é feito de forma automática, e com isso também consegue tomar desisoes sozinho sem nenhum controle até porque ele não possui controle.'
   },
   {
-    title: "Programação",
-    paragraph: "Como dito anteriormente, o cérebro do IntellCar é um Arduíno, mas ele não vêm configurado para colocar na carcaça e sair andando, primeiramente devemos programá-lo e fizemos isso em linguagem C++. E se você está achando que foi difícil fazer isso, temos uma ótima notícia pra lhe dar, porque isso é muito simples e vamos lhe explicar passo a passo o que cada linha de código faz."
+    title: "Funcionamento",
+    paragraph: 'O que da "vida" ao IntellCar é uma bateria de 9v que alimenta todo o conjunto, deste motores, arduíno, etc. Para fazer curvas ele utiliz um método bem inteligente, que é a '
   },
   {
     title: "Utilidade",
@@ -13,17 +13,13 @@ const texts = [
   }
 ];
 const initialEl = document.getElementsByClassName('paragraph')[0];
-/* const height = getComputedStyle(initialEl).height; */
 const previousBt = document.querySelector('.previous');
 const nextBt = document.querySelector('.next');
-let page = 0
+let page = 0;
 
 function startAnimation() {
   const el = document.getElementsByClassName('paragraph')[0];
-  const widhtDoBagui = innerWidth <= 680 ? innerWidth : 680;
-  const fontSize = innerWidth <= 800 ? 16 : 20
-  const heightDoBagui = ((texts[page].paragraph.length / (widhtDoBagui / fontSize)) * fontSize) + 25;
-  console.log(heightDoBagui)
+
   el.style.maxWidth = '0%';
   el.style.height = '1rem';
   el.setAttribute('class', 'paragraph-start');
@@ -41,7 +37,6 @@ function startAnimation() {
 startAnimation();
 
 function nextPage() {
-  const paragraph = document.querySelector('.paragraph-show');
   const title = document.querySelector('#header-copy');
 
   previousBt.style.display = 'flex';
@@ -55,7 +50,6 @@ function nextPage() {
 }
 
 function previousPage() {
-  const paragraph = document.querySelector('.paragraph-show');
   const title = document.querySelector('#header-copy');
 
   nextBt.style.display = 'flex';
