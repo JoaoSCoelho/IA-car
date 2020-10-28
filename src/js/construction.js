@@ -13,7 +13,7 @@ const texts = [
   },
   {
     title: "Demonstração",
-    paragraph: '<iframe width="560" height="315" src="https://www.youtube.com/embed/scTTpyLw8FM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe><video class="video" width="315" height="560" controls="controls" ><source src="../src/images/video.mp4" type="video/mp4"/></video>'
+    paragraph: '<video class="video" width="315" height="560" controls="controls" ><source src="../src/images/video.mp4" type="video/mp4"/></video>'
   }
 ];
 const initialEl = document.getElementsByClassName('paragraph')[0];
