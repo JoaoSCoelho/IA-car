@@ -143,9 +143,11 @@ body {
   overflow: hidden;
 }
 
-#body #video {
+#body .video {
   display: block;
   margin: auto;
+  max-width: 100%;
+  margin-bottom: 1rem;
 }
 
 .container-buttons {
