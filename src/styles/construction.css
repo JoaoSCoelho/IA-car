@@ -143,6 +143,11 @@ body {
   overflow: hidden;
 }
 
+#body #video {
+  display: block;
+  margin: auto;
+}
+
 .container-buttons {
   display: flex;
   justify-content: space-around;
