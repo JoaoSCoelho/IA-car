@@ -1,0 +1,149 @@
+body {
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: #3F3A34;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.default-paragraph {
+  font-size: 18px;
+}
+
+.default-title {
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+.default-section {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.top-banner {
+  background-image: url(images/top-banner-800.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+}
+
+.top-banner::after{
+  background-color: rgba(0, 0, 0, 0.30);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.top-banner::before{
+  background-color: #ffd26f66;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.top-banner .inner-header {
+  background: linear-gradient(162deg, #00000000 0%, #00000000 72%, #f0f0f0 72%, #f0f0f0 100%);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.top-banner .logo {
+  z-index: 1;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 96px;
+  width: 75%;
+}
+
+.top-banner .car {
+  width: 80%;
+}
+
+.initial-presentation {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.initial-presentation h1 {
+  font-size: 30px;
+}
+
+.features-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+
+.features-buttons .feature-button {
+  padding: 10px;
+  background: linear-gradient(225deg, #FFD26F 0%, #FFD26F 50%, #FFFFFF 50%, #FFFFFF 100%);
+  border-radius: 20px;
+  box-shadow: -2px 2px 2px #00000040;
+  transition: 0.15s;
+}
+
+.features-buttons .feature-button:active {
+  box-shadow: none;
+}
+
+.motivation {
+  padding-top: 180px;
+  padding-bottom: 180px;
+  color: white;
+
+  background: linear-gradient(162deg, #00000000 0%, #00000000 25%, #04890166 25%, #04890166 75%, #00000000 75%, #00000000 100%);
+}
+
+.motivation h2 {
+  font-size: 26px;
+}
+
+.construction {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.construction img {
+  border-radius: 20px;
+  width: 100%;
+  margin: 17px 0;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+}
+
+.features .feature-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 24px;
+  background-color: #FFD26F66;
+}
+
+.features .feature-card.highlighted {
+  color: white;
+  background-color: #FFCB57;
+  box-shadow: 0 4px 4px #00000040;
+}

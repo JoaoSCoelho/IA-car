@@ -1,12 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IntellCar</title>
-</head>
-<body>
-  O site vai ser aqui
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IntellCar</title>
+
+    <link rel="stylesheet" href="main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="top-banner">
+      <div class="inner-header">
+        <img class="logo" src="/images/logo.svg" alt="IntellCar logo" />
+        <img
+          class="car"
+          src="/images/no-background-car-800.png"
+          alt="IntellCar no background"
+        />
+      </div>
+    </header>
+
+    <section class="initial-presentation default-section">
+      <h1 class="default-title">O carrinho inteligente dos alunos do IFBA</h1>
+      <p class="default-paragraph">
+        Texto sobre o carro Texto sobre o carro Texto sobre o carro Texto sobre
+        o carro Texto sobre o carro Texto sobre o carro Texto sobre o carro
+        Texto sobre o carro Texto sobre o carro Texto sobre o carro Texto sobre
+        o carro Texto sobre o carro
+      </p>
+    </section>
+
+    <section class="features-buttons">
+      <button class="processor feature-button">
+        <img src="/images/processor.svg" alt="Processor" />
+      </button>
+      <button class="robot feature-button">
+        <img src="/images/robot.svg" alt="Robot" />
+      </button>
+      <button class="repeat feature-button">
+        <img src="/images/repeat.svg" alt="Repeat" />
+      </button>
+      <button class="route feature-button">
+        <img src="/images/route.svg" alt="Route" />
+      </button>
+    </section>
+
+    <section class="motivation default-section">
+      <h2 class="default-title">O que motivou?</h2>
+      <p class="default-paragraph">
+        Texto sobre a motivação do projeto Texto sobre a motivação do projeto
+        Texto sobre a motivação do projeto Texto sobre a motivação do projeto
+        Texto sobre a motivação do projeto Texto sobre a motivação do projeto
+        Texto sobre a motivação do projeto
+      </p>
+    </section>
+
+    <section class="construction default-section">
+      <h2 class="default-title">Construção</h2>
+      <p class="default-paragraph">
+        O primeiro passo na construção desse projeto foi adquirir todos os
+        materiais necessários e iniciar a montagem do veículo propriamente dito.
+      </p>
+      <img src="/images/materials-800.jpg" alt="Car materials in a table">
+      <p class="default-paragraph">
+        Para fixar as partes no chassi foram usados encaixes pre-fabricados, parafusos com porcas e fitas adesivas, já para a fixação de algumas das ligações entre fios foi utilizado a solda estanho.
+      </p>
+      <img src="/images/construction-table-800.jpg" alt="Construction table of the IntellCar">
+      <p class="default-paragraph">
+        Com tudo montado, partimos para a programação da placa arduíno.
+      </p>
+    </section>
+
+    <section class="features">
+      <div class="feature-card brain">
+        <img src="/images/processor.svg" alt="Processor" />
+        <p class="default-paragraph">O cérebro do IntellCar é uma plaquinha de Arduíno UNO, é nela que todo o código que controla o robô funciona.</p>
+      </div>
+      <div class="feature-card highlighted materials">
+        <img src="/images/robot-white.svg" alt="Robot" />
+        <p class="default-paragraph">Feito com chassi acrílico, motores CC, pilhas AA, sensor ultrasônico, sensores de infravermelho IR...</p>
+      </div>
+      <div class="feature-card obstacles">
+        <img src="/images/repeat.svg" alt="Repeat" />
+        <p class="default-paragraph">É capaz de contornar obstáculos em seu caminho, preferindo a direção com maior espaço disponível.</p>
+      </div>
+      <div class="feature-card route">
+        <img src="/images/route.svg" alt="Route" />
+        <p class="default-paragraph">Consegue seguir um percurso previamente trilhado e obedecer instruções presentes na trilha.</p>
+      </div>
+    </section>
+  </body>
 </html>
