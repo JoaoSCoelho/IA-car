@@ -325,4 +325,18 @@ footer .copy > svg {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
+
+  footer {
+    padding: 50px;
+  }
+
+  footer .content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer .members {
+    border-bottom: 0;
+    border-right: solid 1px white;
+  }
 }
