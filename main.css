@@ -36,6 +36,12 @@ button {
   font-size: 26px;
 }
 
+.content-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+
 .top-banner {
   background-image: url(images/top-banner-800.jpg);
   background-repeat: no-repeat;
@@ -96,8 +102,7 @@ button {
   justify-content: space-evenly;
   margin-bottom: 40px;
   gap: 10px;
-  padding: 0 10px;
-  max-width: 900px;
+  max-width: 700px;
 }
 
 .features-buttons .feature-button {
@@ -132,13 +137,15 @@ button {
 
 .construction img {
   border-radius: 20px;
-  max-width: 100%;
+  max-width: 600px;
+  width: 100%;
   margin: 17px auto;
 }
 
 .features {
   display: flex;
   flex-direction: column;
+  background-color: #FFD26F66;
 }
 
 .features .feature-card {
@@ -146,7 +153,6 @@ button {
   align-items: center;
   gap: 20px;
   padding: 30px 24px;
-  background-color: #FFD26F66;
 }
 
 .features .feature-card.highlighted {
@@ -165,9 +171,11 @@ button {
 }
 
 .final-result img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 600px;
   border-radius: 20px;
   margin-bottom: 12px;
+  vertical-align: text-top;
 }
 
 footer {
@@ -217,6 +225,7 @@ footer .copy {
 
 footer .copy > svg {
   width: calc(80% - 90px);
+  max-width: 305px;
   display: inline;
   vertical-align: middle;
 }
@@ -230,8 +239,15 @@ footer .copy > svg {
   }
 }
 
+@media (min-width: 500px) {
+  footer .members .no-bold {
+    font-weight: normal;
+    display: inline;
+  }
+}
+
 @media (min-width: 700px) {
-  .top-banner .inner-header {
+  .top-banner .inner-header .content-container {
     display: flex;
     justify-content: space-evenly;
     padding: 50px 0;
@@ -254,9 +270,59 @@ footer .copy > svg {
     margin-bottom: -20px;
   }
 
+  .initial-presentation-and-features-buttons .content-container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    align-items: center;
+  }
+
+  .initial-presentation {
+    max-width: 870px;
+  }
+
+  .features-buttons {
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "a b"
+                         "c d";
+    margin: 40px 0;
+    gap: 24px;
+    max-width: 100%;
+  }
+
+  .features-buttons .feature-button {
+    padding: 20px;
+    
+    border-radius: 20px;
+    box-shadow: -2px 2px 2px #00000040;
+    transition: 0.15s;
+  }
+
   .motivation {
     background: #04890166;
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .initial-presentation-and-features-buttons .content-container {
+    grid-template-columns: 724px 1fr;
+  }
+
+  .features-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-areas: "a b"
+                         "c d";
+    margin: 40px 0;
+    padding: 0 10px;
+    max-width: 100%;
+  }
+
+  .features .content-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
