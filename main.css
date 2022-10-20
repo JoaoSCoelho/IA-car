@@ -95,6 +95,9 @@ button {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 40px;
+  gap: 10px;
+  padding: 0 10px;
+  max-width: 900px;
 }
 
 .features-buttons .feature-button {
@@ -216,4 +219,44 @@ footer .copy > svg {
   width: calc(80% - 90px);
   display: inline;
   vertical-align: middle;
+}
+
+
+
+
+@media (max-width: 400px) {
+  .features-buttons {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 700px) {
+  .top-banner .inner-header {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    align-items: center;
+  }
+
+  .top-banner .logo {
+    z-index: 1;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 30%;
+    max-width: 400px;
+  }
+  
+  .top-banner .car {
+    max-width: 400px;
+    width: 40%;
+    height: 100%;
+    margin-bottom: -20px;
+  }
+
+  .motivation {
+    background: #04890166;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
